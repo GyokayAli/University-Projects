@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FYProject.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css" />
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+   <script src="Game-Goblin/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script> 
+    <title><%: Page.Title %> - The Motivation Game</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+</head>
+<body id="top">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+       
+        <!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="./Default">the Motivation Code</a></h1>
+    </div>
+    <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a href="./Default">Home</a></li>
+        <li><a href="./Members">My Area</a></li>
+        <li><a class="drop" href="#">Programming</a>
+          <ul>
+            <li><a href="./TheQuiz">Take Quiz</a></li>
+            <li><a class="drop" href="#">Play and Learn</a>
+                <ul>
+                    <li><a href="./GameCSharp">C# Game</a></li>
+                </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Extras</a>
+          <ul>
+            <li><a href="./About">About</a></li>
+            <li><a href="./Contact">Contact us</a></li>
+          </ul>
+        </li>
+        <li><a class="drop" href="#">Account</a>
+          <ul>
+            <li><a href="./Progress">Progress</a></li>
+            <li><a href="./Settings">My settings</a></li>
+            <li><a href="./Suggestion">Share your ideas</a></li>
+            <li><a href="./Logout">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="container clear" role="main"> 
+
+      <!-- MAIN CONTENT -->
+          <div class="container body-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+          </div> 
+      <!-- END OF MAIN CONTENT -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">Details</h6>
+      <address class="btmspace-15">
+      Final Year Project<br>
+      Developed by<br>
+      <strong>Gyokay Ali</strong><br>
+      </address>
+      <ul class="nospace">
+        <li class="btmspace-10"><span class="uni programme"></span>BSc (Hons) Software Engineering</li>
+        <li><span class="university"></span> University of Greenwich</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Quick Links</h6>
+      <ul class="nospace linklist">
+        <li><a href="./Default">Home Page</a></li>
+        <li><a href="./About">About</a></li>
+        <li><a href="./Contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Project Aim</h6>
+      <article>
+        <p>The aim of this project was to develop an innovative learning application for Year 1 CIS students to learn programming basics by “doing”. The long term goal is to motivate learners.</p>
+      </article>
+    </div>
+    <div class="one_quarter">
+      <h6 class="title">Follow us on Social Media</h6>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="https://gb.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="https://www.google.co.uk/"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-tumblr" href="https://www.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+      </ul>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+    </form>
+    <!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.flexslider-min.js"></script>
+
+
+
+</body>
+</html>
+

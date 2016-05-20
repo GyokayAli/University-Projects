@@ -1,0 +1,192 @@
+body {
+	background: black;
+	/*font-family: 'Roboto Slab', serif;*/
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 500;
+}
+
+audio {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.yellow {
+	color: #ff9900;
+}
+
+#game {
+	display: none;
+	text-align: center;
+	
+}
+
+#top {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#levels {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-align: right;
+	margin-top: 40px;
+	font-size: 1.3em;
+}
+
+.active {
+	/*color: green;
+	font-weight: bold;
+	text-decoration: underline;*/
+	background-color: #32469B;
+	border-radius: 5px;
+}
+
+#options {
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.uibox{
+	border: 2px solid #ffcc00;
+	background-color: #0E132C;
+	background: rgb(38,36,116); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(38,36,116,1) 0%, rgba(13,14,51,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(38,36,116,1)), color-stop(100%,rgba(13,14,51,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(38,36,116,1) 0%,rgba(13,14,51,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(38,36,116,1) 0%,rgba(13,14,51,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(38,36,116,1) 0%,rgba(13,14,51,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(38,36,116,1) 0%,rgba(13,14,51,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262474', endColorstr='#0d0e33',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	border-radius: 100px;
+}
+
+#question-box {
+	/*border: 2px solid #32469B;*/
+	
+	width: 940px;
+	margin: 10px auto;
+	padding: 10px;
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.big-text {
+	color: #FF7E00;
+	font-size: 1.6em;
+	margin-right: 15px;
+	margin-left: 10px;
+}
+
+#question-box .content{
+	line-height: 1.7em;
+	
+	color:#ffffff;
+	
+
+}
+
+#money {
+	font-size: 1.9em;
+	font-weight: bold;
+	color: #fff;
+	float: right;
+	display: block;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#logo {
+	width: 480px;
+	float: left;
+	margin-left: 240px;
+	margin-top: 60px;
+}
+
+#mute {
+	-webkit-filter: invert(100%);
+	position: absolute;
+	top:20px;
+	left:0px;
+}
+
+#game-over {
+	display: none;
+	font-size: 8em;
+	font-weight: bold;
+	color: white;
+	width: 980px;
+	margin-top: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#fifty {
+	background: url('../Game-Millionaire/img/50-50.png') no-repeat 0 0;
+}
+
+#phone-friend {
+	background: url('../Game-Millionaire/img/phone-friend.png') no-repeat 0 0;
+}
+
+#audience {
+	background: url('../Game-Millionaire/img/audience.png') no-repeat 0 0;
+}
+
+#answer-box {
+	color: white;
+	font-size: 1.3em;
+	text-align: left;
+	display: inline-block;
+	width:960px;
+	margin: 0 auto;
+}
+
+#pre-start {
+	display: none;
+}
+
+.answer{
+	float: left;
+	width: 455px;
+	margin:5px;
+	padding:5px;
+	font-size: 1.2em;
+
+	transition: all 0.25s ease-out; /* Include vendor prefixes before this */
+}
+.correct{
+	background: green;
+}
+
+.answer.correct:hover{
+	background: green;
+}
+
+.answer:hover {
+	cursor: pointer;
+	
+	background: #ffcc00;
+	color:#100E39;
+}
+
+.options-button {
+	width: 64px;
+	height: 64px;
+	margin-left: 12px;
+	float: left;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.options-button:hover {
+	background-position: 0 -64px !important;
+}

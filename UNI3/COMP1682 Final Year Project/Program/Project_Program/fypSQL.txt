@@ -1,0 +1,134 @@
+CREATE TABLE prjMember
+(
+username VARCHAR(128) NOT NULL,
+email VARCHAR(128) NOT NULL,
+pass VARCHAR(128) NOT NULL,
+PRIMARY KEY (username)
+);
+
+CREATE TABLE prjAdmin
+(
+username VARCHAR(128) NOT NULL,
+pass VARCHAR(128) NOT NULL,
+PRIMARY KEY (username)
+);
+
+CREATE TABLE prjGame
+(
+gameID INT IDENTITY(1,1) NOT NULL,
+difficulty VARCHAR(28) NOT NULL,
+instruction VARCHAR(250) NOT NULL,
+PRIMARY KEY (gameID)
+);
+
+CREATE TABLE prjQuiz
+(
+quizID INT IDENTITY(1,1) NOT NULL,
+difficulty VARCHAR(28) NOT NULL,
+language VARCHAR(28) NOT NULL,
+PRIMARY KEY (quizID)
+);
+
+CREATE TABLE prjQuestion
+(
+questionID INT IDENTITY(1,1)  NOT NULL,
+question VARCHAR (250) NOT NULL,
+point INT NOT NULL,
+quizID INT NOT NULL,
+PRIMARY KEY (questionID),
+FOREIGN KEY (quizID) REFERENCES prjQuiz(quizID)
+);
+
+CREATE TABLE prjAnswer
+(
+answerID INT IDENTITY(1,1),
+answer VARCHAR (128) NOT NULL,
+correct BIT NOT NULL DEFAULT 0,
+questionID INT NOT NULL,
+PRIMARY KEY (answerID),
+FOREIGN KEY (questionID) REFERENCES prjQuestion(questionId)
+);
+
+CREATE TABLE prjProgress
+(
+progressID INT IDENTITY(1,1)  NOT NULL,
+level INT NOT NULL DEFAULT 1,
+exp INT NOT NULL DEFAULT 0,
+username VARCHAR(128) NOT NULL,
+PRIMARY KEY (progressID),
+FOREIGN KEY (username) REFERENCES prjMember(username)
+);
+
+CREATE TABLE prjProgressLanguage
+(
+progressLangID INT IDENTITY(1,1) NOT NULL,
+language VARCHAR(28) NOT NULL,
+languageExp INT NOT NULL,
+languageScore INT NOT NULL,
+progressID INT NOT NULL,
+PRIMARY KEY(progressLangID),
+FOREIGN KEY (progressID) REFERENCES prjProgress (progressID)
+);
+
+CREATE TABLE prjProgressQuiz
+(
+progressQuizID INT IDENTITY(1,1)  NOT NULL,
+exp INT NOT NULL DEFAULT 0,
+lastAttempt DATE,
+lastScore INT NOT NULL,
+lastCorrectAnswers INT NOT NULL,
+progressID INT NOT NULL,
+PRIMARY KEY (progressQuizID),
+FOREIGN KEY (progressID) REFERENCES prjProgress(progressID)
+);
+
+CREATE TABLE prjProgressGame
+(
+progressGameID INT IDENTITY(1,1)  NOT NULL,
+exp INT NOT NULL DEFAULT 0,
+lastAttempt DATE,
+lastScore INT NOT NULL,
+lastLevel INT NOT NULL,
+progressID INT NOT NULL,
+PRIMARY KEY (progressGameID),
+FOREIGN KEY (progressID) REFERENCES prjProgress(progressID)
+);
+
+CREATE TABLE prjSuggestion
+(
+suggestID INT IDENTITY(1,1)  NOT NULL,
+description VARCHAR (250) NOT NULL,
+username VARCHAR(128) NOT NULL,
+PRIMARY KEY (suggestID),
+FOREIGN KEY (username) REFERENCES prjMember(username)
+);
+
+CREATE TABLE prjQuizInfoBank
+(
+quizInfoID INT IDENTITY(1,1) NOT NULL,
+infoHowToProgress VARCHAR(250) NOT NULL,
+level INT NOT NULL,
+quizID INT NOT NULL,
+PRIMARY KEY (quizInfoID),
+FOREIGN KEY (quizID) REFERENCES prjQuiz(quizID)
+);
+
+CREATE TABLE prjGameInfoBank
+(
+gameInfoID INT IDENTITY(1,1) NOT NULL,
+infoHowToProgress VARCHAR(250) NOT NULL,
+level INT NOT NULL,
+gameID INT NOT NULL,
+PRIMARY KEY (gameInfoID),
+FOREIGN KEY (gameID) REFERENCES prjGame(gameID)
+);
+
+
+INSERT INTO prjQuiz (difficulty, language) VALUES ('easy','c#');
+INSERT INTO prjQuiz (difficulty, language) VALUES ('medium','c#');
+INSERT INTO prjQuiz (difficulty, language) VALUES ('difficult','c#');
+INSERT INTO prjQuiz (difficulty, language) VALUES ('very difficult','c#');
+INSERT INTO prjQuiz (difficulty, language) VALUES ('expert','c#');
+
+
+

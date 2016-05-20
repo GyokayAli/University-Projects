@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B31F82DA-EF9F-456B-96F9-8FEBA8CDF3AE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FYProject</RootNamespace>
+    <AssemblyName>FYProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Contribute.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Game-Millionaire\css\style.css" />
+    <Content Include="Game-Millionaire\img\50-50.png" />
+    <Content Include="Game-Millionaire\img\audience.png" />
+    <Content Include="Game-Millionaire\img\logo.jpg" />
+    <Content Include="Game-Millionaire\img\mute.png" />
+    <Content Include="Game-Millionaire\img\phone-friend.png" />
+    <Content Include="Game-Millionaire\img\ui.svg" />
+    <Content Include="Game-Millionaire\img\unmute.png" />
+    <Content Include="Game-Millionaire\index.html" />
+    <Content Include="Game-Millionaire\js\jquery-2.0.3.min.js" />
+    <Content Include="Game-Millionaire\js\knockout-3.0.0.js" />
+    <Content Include="Game-Millionaire\js\millionaire.js" />
+    <Content Include="Game-Millionaire\sound\background.mp3" />
+    <Content Include="Game-Millionaire\sound\right.mp3" />
+    <Content Include="Game-Millionaire\sound\wrong.mp3" />
+    <Content Include="GameCSharp.aspx" />
+    <Content Include="images\demo\230x200.png" />
+    <Content Include="images\demo\320x176.png" />
+    <Content Include="images\demo\80x80.gif" />
+    <Content Include="images\demo\avatar.png" />
+    <Content Include="images\demo\c.png" />
+    <Content Include="images\demo\cpp.png" />
+    <Content Include="images\demo\csharp.png" />
+    <Content Include="images\demo\gallery\01.png" />
+    <Content Include="images\demo\github.jpg" />
+    <Content Include="images\demo\imgl.gif" />
+    <Content Include="images\demo\imgr.gif" />
+    <Content Include="images\demo\java.png" />
+    <Content Include="images\demo\js.png" />
+    <Content Include="images\demo\php.png" />
+    <Content Include="images\demo\progress.png" />
+    <Content Include="images\demo\python.png" />
+    <Content Include="images\demo\quiz.png" />
+    <Content Include="images\demo\ruby.png" />
+    <Content Include="images\demo\set.png" />
+    <Content Include="images\demo\slides\slide1.png" />
+    <Content Include="images\demo\slides\slide2.png" />
+    <Content Include="images\demo\slides\slide3.png" />
+    <Content Include="images\instruction\papyr.png" />
+    <Content Include="layout\scripts\jquery.backtotop.js" />
+    <Content Include="layout\scripts\jquery.flexslider-min.js" />
+    <Content Include="layout\scripts\jquery.min.js" />
+    <Content Include="layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="layout\styles\custom.flexslider.css" />
+    <Content Include="layout\styles\fontawesome-4.3.0.min.css" />
+    <Content Include="layout\styles\fonts\flexslider-icon.svg" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="layout\styles\framework.css" />
+    <Content Include="layout\styles\layout.css" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Members.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="layout\styles\fonts\flexslider-icon.eot" />
+    <Content Include="layout\styles\fonts\flexslider-icon.ttf" />
+    <Content Include="layout\styles\fonts\flexslider-icon.woff" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="layout\styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="layout\styles\fonts\FontAwesome.otf" />
+    <Content Include="Game-Millionaire\questions.json" />
+    <Content Include="Game-Millionaire\questions2.json" />
+    <Content Include="Game-Millionaire\README.md" />
+    <Content Include="Game-Millionaire\js\jquery-2.0.3.min.map" />
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Progress.aspx" />
+    <Content Include="QuestionBank.aspx" />
+    <Content Include="QuizCSharp.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Settings.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="Game-Goblin\ChangeLog.txt" />
+    <Content Include="Game-Goblin\images\background.png" />
+    <Content Include="Game-Goblin\images\hero.png" />
+    <Content Include="Game-Goblin\images\monster.png" />
+    <Content Include="Game-Goblin\index.html" />
+    <Content Include="Game-Goblin\js\game.js" />
+    <Content Include="Game-Goblin\kitchen-sink.html" />
+    <Content Include="Game-Goblin\src-noconflict\ace.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-beautify.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-chromevox.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-elastic_tabstops_lite.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-emmet.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-error_marker.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-keybinding_menu.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-language_tools.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-linking.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-modelist.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-old_ie.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-searchbox.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-settings_menu.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-spellcheck.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-split.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-static_highlight.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-statusbar.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-textarea.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-themelist.js" />
+    <Content Include="Game-Goblin\src-noconflict\ext-whitespace.js" />
+    <Content Include="Game-Goblin\src-noconflict\keybinding-emacs.js" />
+    <Content Include="Game-Goblin\src-noconflict\keybinding-vim.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-abap.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-abc.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-actionscript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ada.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-apache_conf.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-applescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-asciidoc.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-assembly_x86.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-autohotkey.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-batchfile.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-c9search.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-cirru.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-clojure.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-cobol.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-coffee.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-coldfusion.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-csharp.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-css.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-curly.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-c_cpp.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-d.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-dart.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-diff.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-django.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-dockerfile.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-dot.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-eiffel.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ejs.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-elixir.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-elm.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-erlang.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-forth.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-fortran.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ftl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-gcode.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-gherkin.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-gitignore.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-glsl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-gobstones.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-golang.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-groovy.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-haml.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-handlebars.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-haskell.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-haxe.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-html.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-html_elixir.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-html_ruby.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ini.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-io.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-jack.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-jade.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-java.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-javascript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-json.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-jsoniq.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-jsp.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-jsx.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-julia.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-latex.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-lean.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-less.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-liquid.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-lisp.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-livescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-live_script.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-logiql.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-lsl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-lua.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-luapage.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-lucene.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-makefile.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-markdown.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mask.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-matlab.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mavens_mate_log.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-maze.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mel.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mipsassembler.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mips_assembler.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mushcode.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-mysql.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-nix.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-nsis.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-objectivec.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ocaml.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-pascal.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-perl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-pgsql.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-php.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-plain_text.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-powershell.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-praat.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-prolog.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-properties.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-protobuf.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-python.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-r.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-razor.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-rdoc.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-rhtml.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-rst.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-ruby.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-rust.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-sass.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-scad.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-scala.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-scheme.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-scss.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-sh.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-sjs.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-smarty.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-snippets.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-soy_template.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-space.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-sql.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-sqlserver.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-stylus.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-svg.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-swift.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-swig.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-tcl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-tex.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-text.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-textile.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-toml.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-twig.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-typescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-vala.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-vbscript.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-velocity.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-verilog.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-vhdl.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-wollok.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-xml.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-xquery.js" />
+    <Content Include="Game-Goblin\src-noconflict\mode-yaml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\abap.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\abc.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\actionscript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ada.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\apache_conf.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\applescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\asciidoc.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\assembly_x86.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\autohotkey.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\batchfile.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\c9search.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\cirru.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\clojure.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\cobol.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\coffee.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\coldfusion.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\csharp.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\css.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\curly.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\c_cpp.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\d.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\dart.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\diff.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\django.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\dockerfile.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\dot.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\eiffel.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ejs.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\elixir.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\elm.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\erlang.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\forth.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\fortran.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ftl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\gcode.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\gherkin.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\gitignore.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\glsl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\gobstones.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\golang.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\groovy.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\haml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\handlebars.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\haskell.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\haxe.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\html.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\html_elixir.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\html_ruby.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ini.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\io.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\jack.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\jade.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\java.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\javascript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\json.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\jsoniq.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\jsp.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\jsx.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\julia.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\latex.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\lean.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\less.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\liquid.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\lisp.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\livescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\live_script.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\logiql.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\lsl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\lua.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\luapage.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\lucene.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\makefile.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\markdown.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mask.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\matlab.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\maze.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mel.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mipsassembler.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mips_assembler.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mushcode.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\mysql.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\nix.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\nsis.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\objectivec.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ocaml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\pascal.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\perl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\pgsql.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\php.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\plain_text.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\powershell.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\praat.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\prolog.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\properties.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\protobuf.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\python.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\r.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\razor.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\rdoc.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\rhtml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\rst.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\ruby.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\rust.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\sass.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\scad.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\scala.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\scheme.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\scss.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\sh.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\sjs.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\smarty.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\snippets.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\soy_template.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\space.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\sql.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\sqlserver.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\stylus.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\svg.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\swift.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\swig.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\tcl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\tex.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\text.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\textile.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\toml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\twig.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\typescript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\vala.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\vbscript.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\velocity.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\verilog.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\vhdl.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\wollok.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\xml.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\xquery.js" />
+    <Content Include="Game-Goblin\src-noconflict\snippets\yaml.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-ambiance.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-chaos.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-chrome.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-clouds.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-clouds_midnight.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-cobalt.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-crimson_editor.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-dawn.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-dreamweaver.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-eclipse.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-github.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-idle_fingers.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-iplastic.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-katzenmilch.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-kr_theme.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-kuroir.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-merbivore.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-merbivore_soft.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-monokai.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-mono_industrial.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-pastel_on_dark.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-solarized_dark.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-solarized_light.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-sqlserver.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-terminal.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-textmate.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-tomorrow.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-tomorrow_night.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-tomorrow_night_blue.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-tomorrow_night_bright.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-tomorrow_night_eighties.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-twilight.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-vibrant_ink.js" />
+    <Content Include="Game-Goblin\src-noconflict\theme-xcode.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-coffee.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-css.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-html.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-javascript.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-json.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-lua.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-php.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-xml.js" />
+    <Content Include="Game-Goblin\src-noconflict\worker-xquery.js" />
+    <Content Include="Game-Goblin\textarea\ace\ace-bookmarklet.js" />
+    <Content Include="Suggestion.aspx" />
+    <Content Include="TheQuiz.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="Game-Goblin\LICENSE" />
+    <Content Include="Game-Goblin\package.json" />
+    <Content Include="Game-Goblin\README.md" />
+    <Content Include="Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contribute.aspx.cs">
+      <DependentUpon>Contribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contribute.aspx.designer.cs">
+      <DependentUpon>Contribute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnectivity.cs" />
+    <Compile Include="DBConnectivity2.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameCSharp.aspx.cs">
+      <DependentUpon>GameCSharp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameCSharp.aspx.designer.cs">
+      <DependentUpon>GameCSharp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members.aspx.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members.aspx.designer.cs">
+      <DependentUpon>Members.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Progress.aspx.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Progress.aspx.designer.cs">
+      <DependentUpon>Progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="QuestionAnswer.cs" />
+    <Compile Include="QuestionBank.aspx.cs">
+      <DependentUpon>QuestionBank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuestionBank.aspx.designer.cs">
+      <DependentUpon>QuestionBank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.cs" />
+    <Compile Include="QuizCSharp.aspx.cs">
+      <DependentUpon>QuizCSharp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuizCSharp.aspx.designer.cs">
+      <DependentUpon>QuizCSharp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Suggestion.aspx.cs">
+      <DependentUpon>Suggestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suggestion.aspx.designer.cs">
+      <DependentUpon>Suggestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TheQuiz.aspx.cs">
+      <DependentUpon>TheQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TheQuiz.aspx.designer.cs">
+      <DependentUpon>TheQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50111</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
