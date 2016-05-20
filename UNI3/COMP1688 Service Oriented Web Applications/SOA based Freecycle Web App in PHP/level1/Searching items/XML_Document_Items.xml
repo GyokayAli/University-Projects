@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="\\stu-storage2\user-area\3\ag306\Desktop\COMP1688 SOWA\level 1\Searching items\XMLDocument_Items.xsd">
+	<item itemID="lew-item1">
+		<title>Free toaster</title>
+		<descr>New toaster. Never been used.</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="lew-img1">toaster</image>
+	</item>
+	<item itemID="lew-item2">
+		<title>Large duvet</title>
+		<descr>Duvet made of cotton by IKEA</descr>
+		<post_date>23/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="lew-img2">duvet</image>
+	</item>
+	<item itemID="lew-item3">
+		<title>Night lamp</title>
+		<descr>Giving away my lovely lamp</descr>
+		<post_date>22/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="lew-img3">lamp</image>
+	</item>
+	<item itemID="lew-item4">
+		<title>Computer desk</title>
+		<descr>An old desk, but good condition</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 7DF</postcode>
+		<image imgID="lew-img4">desk</image>
+	</item>
+	<item itemID="lew-item5">
+		<title>Coffee mugs</title>
+		<descr>Mugs from Japan</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 9HF</postcode>
+		<image imgID="lew-img5">mugs</image>
+	</item>
+	<item itemID="lew-item6">
+		<title>David Beckham Classic Blue</title>
+		<descr>The newest fragrance by David Beckham</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 5EF</postcode>
+		<image imgID="lew-img6">fragrance</image>
+	</item>
+	<item itemID="lew-item7">
+		<title>Office chair</title>
+		<descr>Old leather office chair. Adjustable</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="lew-img7">chair</image>
+	</item>
+	<item itemID="bro-item1">
+		<title>Second hand BMX</title>
+		<descr>Drag BMX</descr>
+		<post_date>24/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="lbro-img1">bmx</image>
+	</item>
+	<item itemID="gre-item1">
+		<title>Lovely car</title>
+		<descr>Ford Mondeo 98 all extras</descr>
+		<post_date>27/02/2016</post_date>
+		<postcode>SE18 5HF</postcode>
+		<image imgID="gre-img1">mondeo car</image>
+	</item>
+</items>

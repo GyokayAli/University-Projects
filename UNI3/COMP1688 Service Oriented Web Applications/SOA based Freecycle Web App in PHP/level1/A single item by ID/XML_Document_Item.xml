@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item itemID="lew-item1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="\\stu-storage2\user-area\3\ag306\Desktop\COMP1688 SOWA\level 1\A single item by ID\XML_Document_Item.xsd">
+	<title>Free toaster</title>
+	<descr>New toaster. Never been used.</descr>
+	<post_date>24/02/2016</post_date>
+	<image imgID="lew-img1">toaster</image>
+	<member memID="lew-0001">
+		<full_name>John Doe</full_name>
+		<postcode>SE18 5HF</postcode>
+		<contact_number>0758856673</contact_number>
+		<email>dj306@gre.ac.uk</email>
+	</member>
+</item>

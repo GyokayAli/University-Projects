@@ -1,0 +1,138 @@
+<?php
+include 'include/functions.php';
+include 'include/connection.php';
+
+
+$sql= 'SELECT * FROM Post WHERE username="'.$_SESSION['username'].'";';
+$result = mysqli_query($conn, $sql);
+
+
+/////////// DELETE POST
+if(isset($_POST['delete']))
+{
+$sql_s='DELETE FROM image WHERE post_id="'.$_POST['post_id'].'";';
+$sql_s.= 'DELETE FROM Post WHERE username="'.$_SESSION['username'].'" AND post_id="'.$_POST['post_id'].'"; ';
+$result_s = mysqli_multi_query($conn,$sql_s) ;
+	
+	if($result_s == false)
+	{
+	mysqli_error($conn);
+	}
+header("Refresh:0");
+}
+/////////// DELETE POST
+
+
+/////////// EDIT POST
+if(isset($_POST['edit']))
+{
+	$result2 = mysqli_query($conn, $sql);
+
+while($row = mysqli_fetch_assoc($result2))
+	{
+		//$save = '
+		?>
+		<form id="formPost" method="post" action="updatePost.php" onsubmit="return validatePostForm() enctype="multipart/form-data">
+			<h2><br/>Edit your post<br/></h2>
+			<div>
+				<label for="post-title">Title: </label><br/><br/>
+				<input type="hidden" name="post-id" value="'.$row["post_id"].'"/>
+				<input type="text" name="post-title" id="post-title" value="'. $row["title"] .'" maxlength="50" /> <br/><br/>
+			</div>
+			<div>
+				<label for="post-user-name">Name: </label><br/>
+				<input type="text" name="post-user-name" id="post-user-name" value="'. $row["aname"] .'"  maxlength="40"/> <br/><br/>
+			</div>
+			<div>
+				<label for="post-location">Location: </label><br/>
+				<input type="text" name="post-location" id="post-location" value="'. $row["address"] .'" size="50" maxlength="40"/> <br/><br/>
+			</div>
+			<div>
+				<label for="post-tel">Telephone: </label><br/>
+				<input type="text" name="post-tel" id="post-tel" value="'. $row["tel"] .'" size="50" maxlength="20"/> <br/><br/>
+			</div>
+			<div>
+				<p>Description: </p>
+				<textarea rows="5" cols="50" name="post-descr" id="post-descr" maxlength="250" form="formPost">'. $row["description"] .'
+				</textarea><br/>
+			</div>
+			<div>
+				<label for="date">Date: </label>
+				<input type="text" id="date" name="post-date" value="'. $row["post_date"] .'"> </input> <br/>
+			</div>
+			<div>
+				<input type="submit" value="Save" name="saveButton"/></p>
+			</div>
+		</form>
+		<?php
+		//';			
+	}
+}
+/////////// EDIT POST
+
+//check if there are posts at all
+    if(mysqli_num_rows($result) > 0)
+	{		
+
+		$message = '<table id="myTable" border="1" width="100%" >
+		  <tr>
+			<th>Images</th>
+			<th>Title</th>
+			<th>Description</th>
+			<th>Posted by</th>
+			<th>Address</th>
+			<th>Telephone</th>
+			<th>Post date</th>
+			<th></th>
+			<th></th>
+		  </tr>';
+
+
+		while($row = mysqli_fetch_assoc($result))
+		{
+        
+		$message.= '<tr>';
+
+		//get image of post
+        $query = 'SELECT * FROM image WHERE post_id="'.$row['post_id'].'"';
+		$result3 = mysqli_query($conn, $query);	    
+
+	    $message.= '<td>';
+		for ( $i = 0 ; $i < mysqli_num_rows($result3) ; $i++ ) { //error?
+			$row2 = mysqli_fetch_assoc($result3);
+            $image = $row2['img'];
+			$message.= '<img src="data:image/png;base64,' . base64_encode($image) . '" />';
+		 }//get image of post
+		
+	    $message.='</td>';     //post image
+		$message.= '<td>' . $row["title"] . '</td>'; //title
+		$message.= '<td>' . $row["description"] . '</td>'; //description
+		$message.= '<td>' . $row["aname"] . '</td>'; //posted by (name)
+		$message.= '<td>' . $row["address"] . '</td>'; //address
+		$message.= '<td>' . $row["tel"] . '</td>'; //tel number
+		$message.= '<td>' . $row["post_date"] . '</td>'; //post date
+		$message.= '<td> <form method="post"> 
+						<input type="submit" name="edit" value="Edit"/>
+						<input type="hidden" name="post_id" value="'.$row["post_id"].'"/></form></td>';
+		$message.= '<td> <form method="post"> 
+					<input type="submit" name="delete" value="Delete"/>
+					<input type="hidden" name="post_id" value="'.$row["post_id"].'"/></form> </td>';
+		$message.= '</tr>';
+		}
+		$message.= '</table>';
+	}
+	else{
+		/*** check if the user is  logged in ***/
+			if(!loggedin()){
+				$message = 'You must be logged in to access this page';
+				header('Location: index.php');
+			}else{
+			$message = 'No posts available. Please submit new ones if you wish!';
+			}
+		}
+include 'include/header.php';
+?>
+		<h1>My posts<br/></h1>
+		<?php echo $message;?>
+		<?php echo $save;?>
+<?php include 'include/footer.php'; ?>
