@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebAppRestaurantSystem.SiteMaster" %>
+<!--
+Template Name: Gravity
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - Food2U</title>
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <webopt:BundleReference runat="server" Path="~/layout/styles/layout.css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body id="top">
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+            <%--Framework Scripts--%>
+            
+            <asp:ScriptReference Name="MsAjaxBundle" />
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site Scripts--%>
+
+        </Scripts>
+    </asp:ScriptManager>
+    <div class="wrapper row1">
+      <header id="header" class="clear"> 
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <h1><a href="./Default">Food2U</a></h1>
+        </div>
+        <div class="fl_right">
+          <ul class="inline">
+            <li><i class="fa fa-phone"></i> +00 (123) 456 789</li>
+            <li><i class="fa fa-envelope-o"></i> infood2u@mail.com</li>
+          </ul>
+        </div>
+        <!-- ################################################################################################ --> 
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="wrapper row2">
+      <nav id="mainav" class="clear"> 
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li><a href="./Login">Login</a></li>
+          <li><a href="./Register">Register</a></li>
+          <li class="active"><a href="./Default">Home</a></li>
+        </ul>
+        <!-- ################################################################################################ --> 
+      </nav>
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="wrapper row3">
+    <!--Featured content -->
+       <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" >
+
+       </asp:ContentPlaceHolder>  
+    <!-- ################-->
+    </div>
+    <div class="wrapper row3">
+      <main class="container clear"> 
+        <!-- main body --> 
+        <asp:ContentPlaceHolder runat="server" ID="MainContent" >
+
+        </asp:ContentPlaceHolder>
+        <!-- ################################################################################################ -->
+     <!--   <ul class="nospace group btmspace-80">
+          <li class="one_third first">
+            <article class="service"><i class=""></i>
+            </article>
+          </li>
+          <li class="one_third">
+            <article class="service"><i class=""></i>
+          
+            </article>
+          </li>
+          <li class="one_third">
+            <article class="service"><i class=""></i>
+            </article>
+          </li>
+        </ul> 
+
+        <div class="flexslider carousel basiccarousel btmspace-80">
+          <ul class="slides">
+        
+          </ul>
+        </div>
+
+        <ul class="nospace group">
+          <li class="one_half first">
+        
+          </li>
+          <li class="one_half">
+        
+          </li>
+        </ul>-->
+        <!-- / main body -->
+        <div class="clear"></div>
+      </main>
+    </div>    
+    <div class="wrapper row4">
+    </div>
+    <!-- ################################################################################################ -->
+    <div class="wrapper row5">
+      <div id="copyright" class="clear"> 
+        <!-- ################################################################################################ -->
+        <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="index.html">Food2U</a></p>
+        <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+        <!-- ################################################################################################ --> 
+      </div>
+    </div>
+    <!-- ################################################################################################ --> 
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a> 
+    <!-- JAVASCRIPTS --> 
+    <script src="layout/scripts/jquery.min.js"></script> 
+    <script src="layout/scripts/jquery.backtotop.js"></script> 
+    <script src="layout/scripts/jquery.mobilemenu.js"></script> 
+    <script src="layout/scripts/jquery.flexslider-min.js"></script>
+    </form>
+    </body>
+    </html>

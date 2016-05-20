@@ -1,0 +1,19 @@
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.Properties.Resources.resources
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.csproj.GenerateResource.Cache
+I:\myroot\pdc\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.exe.config
+I:\myroot\pdc\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.exe
+I:\myroot\pdc\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.pdb
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.exe
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.pdb
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.csprojResolveAssemblyReference.cache
+I:\myroot\pdc\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.Food2UManagementForm.resources
+J:\myroot\pdc\coursework\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.exe.config
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.exe
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.pdb
+J:\myroot\pdc\coursework\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.exe
+J:\myroot\pdc\coursework\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.pdb
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.csprojResolveAssemblyReference.cache
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.Food2UManagementForm.resources
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.Properties.Resources.resources
+J:\myroot\pdc\coursework\FormRestaurantSystem\obj\Debug\FormRestaurantSystem.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\COMP1690 PDC\CW_COMP1690_PDC_ag306\FormRestaurantSystem\bin\Debug\FormRestaurantSystem.exe.config
