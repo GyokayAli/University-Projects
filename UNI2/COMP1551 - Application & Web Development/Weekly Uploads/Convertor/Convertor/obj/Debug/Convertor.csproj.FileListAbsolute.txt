@@ -1,0 +1,29 @@
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\bin\Debug\Convertor.exe
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\bin\Debug\Convertor.pdb
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\ResolveAssemblyReference.cache
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\Convertor.Form1.resources
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\Convertor.Properties.Resources.resources
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\Convertor.csproj.GenerateResource.Cache
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\Convertor.exe
+D:\teaching 2009-2010\APD\week04\Convertor\Convertor\obj\Debug\Convertor.pdb
+D:\teaching2010\AWD\APD\week04\Convertor\Convertor\obj\Debug\Convertor.exe
+D:\teaching2010\AWD\APD\week04\Convertor\Convertor\obj\Debug\Convertor.pdb
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\Convertor.exe
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\Convertor.pdb
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\bin\Debug\Convertor.exe
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\bin\Debug\Convertor.pdb
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\ResolveAssemblyReference.cache
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\Convertor.Form1.resources
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\Convertor.Properties.Resources.resources
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\ResGen.read.1.tlog
+D:\teaching1112\AWD\w03\Convertor\Convertor\Convertor\obj\Debug\ResGen.write.1.tlog
+D:\1415Teaching\AWD\week03\Convertor\Convertor\obj\Debug\Convertor.exe
+D:\1415Teaching\AWD\week03\Convertor\Convertor\obj\Debug\Convertor.pdb
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.exe
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.pdb
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\bin\Debug\Convertor.exe
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\bin\Debug\Convertor.pdb
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.csprojResolveAssemblyReference.cache
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.Form1.resources
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.Properties.Resources.resources
+K:\UNI 2nd\AWD\Week 3\Convertor\Convertor\obj\Debug\Convertor.csproj.GenerateResource.Cache

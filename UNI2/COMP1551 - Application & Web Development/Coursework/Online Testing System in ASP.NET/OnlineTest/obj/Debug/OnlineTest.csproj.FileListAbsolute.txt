@@ -1,0 +1,6 @@
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\bin\OnlineTest.dll.config
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\bin\OnlineTest.dll
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\bin\OnlineTest.pdb
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\obj\Debug\OnlineTest.csprojResolveAssemblyReference.cache
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\obj\Debug\OnlineTest.dll
+C:\Users\Gyoki\Desktop\OnlineTest\OnlineTest\obj\Debug\OnlineTest.pdb

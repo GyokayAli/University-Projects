@@ -1,0 +1,27 @@
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\bin\Debug\HelloDogs.exe
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\bin\Debug\HelloDogs.pdb
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\ResolveAssemblyReference.cache
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Form1.resources
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Properties.Resources.resources
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.csproj.GenerateResource.Cache
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.exe
+D:\teaching 2009-2010\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.pdb
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.exe
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.pdb
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\bin\Debug\HelloDogs.exe
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\bin\Debug\HelloDogs.pdb
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\ResolveAssemblyReference.cache
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Form1.resources
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Properties.Resources.resources
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\ResGen.read.1.tlog
+D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs\obj\Debug\ResGen.write.1.tlog
+D:\teaching2010\AWD\w03\HelloDogs\HelloDogs\obj\Debug\HelloDogs.exe
+D:\teaching2010\AWD\w03\HelloDogs\HelloDogs\obj\Debug\HelloDogs.pdb
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.exe
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.pdb
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\bin\Debug\HelloDogs.exe
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\bin\Debug\HelloDogs.pdb
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.csprojResolveAssemblyReference.cache
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Form1.resources
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.Properties.Resources.resources
+K:\UNI 2nd\AWD\Week 3\HelloDogs\HelloDogs\obj\Debug\HelloDogs.csproj.GenerateResource.Cache

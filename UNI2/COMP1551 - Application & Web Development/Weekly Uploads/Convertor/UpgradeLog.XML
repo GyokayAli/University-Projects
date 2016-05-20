@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Convertor">
+</Property><Property Name="Solution File" Value="D:\teaching2010\AWD\APD\week04\Convertor\Convertor.sln">
+</Property><Property Name="User Options File" Value="D:\teaching2010\AWD\APD\week04\Convertor\Convertor.suo">
+</Property><Property Name="Date" Value="12 October 2010">
+</Property><Property Name="Time" Value="12:01">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Convertor.sln" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Convertor.suo" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor.suo">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Convertor.csproj" Description="Project file successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Convertor.csproj">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Conversions.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Conversions.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Form1.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Form1.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Form1.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Program.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Program.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Temperature.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Temperature.cs">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Properties\Settings.settings" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Form1.resx" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Form1.resx">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Properties\Resources.resx" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\Convertor\Backup\Convertor\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Convertor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Convertor" Source="Convertor\Convertor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Convertor.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Convertor.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Convertor" Source="Convertor\Convertor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

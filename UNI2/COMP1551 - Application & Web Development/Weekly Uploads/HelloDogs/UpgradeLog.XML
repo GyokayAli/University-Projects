@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HelloDogs">
+</Property><Property Name="Solution File" Value="D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs.sln">
+</Property><Property Name="User Options File" Value="D:\teaching2010\AWD\APD\week04\HelloDogs\HelloDogs.suo">
+</Property><Property Name="Date" Value="12 October 2010">
+</Property><Property Name="Time" Value="11:13">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="HelloDogs.sln" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs.sln">
+</Event><Event ErrorLevel="0" Project="" Source="HelloDogs.suo" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs.suo">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\HelloDogs.csproj" Description="Project file successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\HelloDogs.csproj">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Dog.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Dog.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\DogChorus.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\DogChorus.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Form1.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Form1.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Form1.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Program.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Program.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\ClassDiagram1.cd" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\ClassDiagram1.cd">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Properties\Settings.settings" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Form1.resx" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Form1.resx">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\Properties\Resources.resx" Description="File successfully backed up as D:\teaching2010\AWD\APD\week04\HelloDogs\Backup\HelloDogs\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\HelloDogs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HelloDogs" Source="HelloDogs\HelloDogs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HelloDogs.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="HelloDogs.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HelloDogs" Source="HelloDogs\HelloDogs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
